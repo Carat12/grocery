@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingHorizontal="17dp">
+    <TextView
+        android:id="@+id/txt_view_product_name"
+        style="@style/text_view_product_name"
+        android:text="Name"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txt_view_product_price"
+        style="@style/text_view_product_price"
+        android:layout_below="@+id/txt_view_product_name"
+        android:layout_marginTop="10dp"
+        android:text="34" />
+
+    <TextView
+        android:id="@+id/txt_view_product_price_original"
+        style="@style/text_view_product_price_original"
+        android:layout_below="@+id/txt_view_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/txt_view_product_price"
+        android:text="12" />
+
+    <TextView
+        android:id="@+id/txt_view_product_price_save"
+        style="@style/text_view_product_price_original"
+        android:layout_below="@+id/txt_view_product_price"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/red"
+        android:textStyle="italic"
+        android:text="save" />
+</RelativeLayout>

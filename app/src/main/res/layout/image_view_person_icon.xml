@@ -1,0 +1,16 @@
+<ImageView
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/logo"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+<!--
+<ImageView
+android:layout_width="110dp"
+android:layout_height="110dp"
+android:src="@drawable/logo2"
+android:layout_centerInParent="true"
+xmlns:android="http://schemas.android.com/apk/res/android" />-->

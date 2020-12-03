@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_grey_payment">
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Completed" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="13dp"
+                android:paddingLeft="15dp"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_view_address"
+                        android:text="Order date" />
+
+                    <TextView
+                        style="@style/text_view_address"
+                        android:text="Order total" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_details_date"
+                        style="@style/text_view_address"
+                        android:text="10/17/2020" />
+
+                    <TextView
+                        android:id="@+id/text_view_details_total"
+                        style="@style/text_view_address"
+                        android:text="$17.00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Shipping address" />
+            <include layout="@layout/layout_item_address" />
+
+            <TextView
+                android:id="@+id/text_view_item_number"
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Items" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_order_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Summary" />
+            <include layout="@layout/layout_item_summary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

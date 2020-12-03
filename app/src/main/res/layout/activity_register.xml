@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <include layout="@layout/image_view_person_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/edit_text_pw"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edit_text_mobile"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Mobile" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            style="@style/btn_register_login"
+            android:background="@drawable/bg_btn_register_and_login"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register_to_login"
+            android:text="Already have an account? Login now"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:textColor="@color/tab_green"
+            android:background="@null"
+            android:layout_below="@+id/btn_register"
+            android:layout_marginTop="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/image_view_fruit" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

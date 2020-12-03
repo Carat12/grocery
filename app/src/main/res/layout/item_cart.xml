@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="17dp"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/img_view_product"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/txt_view_product_name"
+            style="@style/text_view_product_name"
+            android:layout_marginTop="5dp"
+            android:text="gdsbhgsh" />
+
+        <TextView
+            android:id="@+id/txt_view_product_price"
+            style="@style/text_view_product_price"
+            android:layout_below="@+id/txt_view_product_name"
+            android:layout_marginTop="10dp"
+            android:text="$789" />
+
+        <TextView
+            android:id="@+id/txt_view_product_price_original"
+            style="@style/text_view_product_price_original"
+            android:layout_below="@+id/txt_view_product_price"
+            android:layout_marginTop="1dp"
+            android:text="$789"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_view_product_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/btn_remove_order_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/bg_white"
+                android:src="@drawable/ic_baseline_delete_outline_24" />
+
+            <include layout="@layout/layout_update_order_item_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+<!--
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="3"
+android:background="@drawable/bg_layout_add_remove"
+android:orientation="horizontal"
+android:paddingVertical="7dp">
+
+<ImageButton
+    android:id="@+id/btn_decrement_count"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:backgroundTint="@color/bg_white"
+    android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+<TextView
+    android:id="@+id/text_view_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="1"
+    android:textSize="20dp" />
+
+<ImageButton
+    android:id="@+id/btn_increment_count"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:backgroundTint="@color/bg_white"
+    android:src="@drawable/ic_baseline_add_24" />
+</LinearLayout>-->

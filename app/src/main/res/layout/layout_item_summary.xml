@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="13dp"
+    android:paddingHorizontal="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_view_summary"
+            android:text="Subtotal:" />
+
+        <TextView
+            android:id="@+id/text_view_subtotal"
+            style="@style/text_view_summary"
+            android:layout_alignParentRight="true"
+            android:text="$200" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            style="@style/text_view_summary"
+            android:text="Discount:" />
+
+        <TextView
+            android:id="@+id/text_view_discount"
+            style="@style/text_view_summary"
+            android:layout_alignParentRight="true"
+            android:text="-$20" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/text_view_delivery_title"
+            style="@style/text_view_summary"
+            android:text="Delivery Fee " />
+
+        <TextView
+            style="@style/text_view_summary"
+            android:text="(free over $500):"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/text_view_delivery_title" />
+
+        <TextView
+            android:id="@+id/text_view_delivery"
+            style="@style/text_view_summary"
+            android:layout_alignParentRight="true"
+            android:text="$20" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/grey_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            style="@style/text_view_summary"
+            android:text="Total:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_total"
+            style="@style/text_view_summary"
+            android:layout_alignParentRight="true"
+            android:text="$180"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

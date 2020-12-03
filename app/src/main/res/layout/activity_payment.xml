@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_grey_payment"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Ship to" />
+            <include layout="@layout/layout_item_address" />
+
+
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Items" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/text_view_address_title"
+                android:background="@color/white"
+                android:text="Summary" />
+            <include layout="@layout/layout_item_summary" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_place_order"
+        style="@style/btn_in_activies"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn_add_product"
+        android:text="Place order" />
+</RelativeLayout>
+
+
+    <!--
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_grey_payment"
+    android:orientation="vertical"
+    android:paddingVertical="13dp"
+    android:paddingLeft="15dp">
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Name"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_street"
+        style="@style/text_view_address"
+        android:layout_marginTop="5dp"
+        android:text="1400 Millersport Hwy" />
+
+    <TextView
+        android:id="@+id/text_view_city_state_zipcode"
+        style="@style/text_view_address"
+        android:layout_marginBottom="5dp"
+        android:text="Buffalo, NY 14221" />
+    </LinearLayout>-->

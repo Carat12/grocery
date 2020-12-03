@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:visible="false"
+        app:showAsAction="always"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/menu_cart"
+        android:title="Cart"
+        app:actionLayout="@layout/menu_option_cart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        app:showAsAction="always" />
+</menu>

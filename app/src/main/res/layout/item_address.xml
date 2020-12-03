@@ -1,0 +1,41 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:id="@+id/material_card_address"
+    app:strokeWidth="2dp"
+    android:layout_margin="8dp">
+
+    <include layout="@layout/layout_item_address"/>
+
+</com.google.android.material.card.MaterialCardView>
+
+<!--
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="15dp">
+
+<TextView
+    android:id="@+id/text_view_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:text="Name"
+    android:textSize="25dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/text_view_street"
+    style="@style/text_view_address"
+    android:text="1400 Millersport Hwy" />
+
+<TextView
+    android:id="@+id/text_view_city_state_zipcode"
+    style="@style/text_view_address"
+    android:text="Buffalo, NY 14221" />
+</LinearLayout>-->

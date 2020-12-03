@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <include layout="@layout/image_view_person_icon" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        style="@style/edit_text_address"
+        android:background="@drawable/bg_edit_text"/>
+
+    <EditText
+        android:id="@+id/edit_text_street"
+        style="@style/edit_text_address"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Street" />
+
+    <EditText
+        android:id="@+id/edit_text_houseNo"
+        style="@style/edit_text_address"
+        android:background="@drawable/bg_edit_text"
+        android:hint="HouseNo" />
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        style="@style/edit_text_address"
+        android:background="@drawable/bg_edit_text"
+        android:hint="City" />
+    <!--
+        <EditText
+            android:id="@+id/edit_text_country"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Country"/>-->
+
+    <EditText
+        android:id="@+id/edit_text_pincode"
+        style="@style/edit_text_address"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Pincode"
+        android:inputType="textPostalAddress" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save_address"
+            style="@style/btn_in_activies"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:background="@drawable/bg_btn_add_product"
+            android:text="Save" />
+
+    </RelativeLayout>
+</LinearLayout>

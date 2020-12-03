@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <include layout="@layout/tool_bar" />
+
+    <include layout="@layout/image_view_person_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            style="@style/edit_text"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/edit_text_pw"
+            style="@style/edit_text"
+            android:layout_below="@+id/edit_text_email"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/btn_register_login"
+            android:layout_below="@+id/edit_text_pw"
+            android:background="@drawable/bg_btn_register_and_login"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_to_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:text="New user? Create a new account"
+            android:textAllCaps="false"
+            android:textColor="@color/tab_green"
+            android:textSize="17dp" />
+
+        <include layout="@layout/image_view_fruit" />
+    </RelativeLayout>
+</LinearLayout>

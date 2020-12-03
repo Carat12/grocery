@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar" />
+
+    <include layout="@layout/image_view_person_icon" />
+
+    <LinearLayout
+        style="@style/layout_user_info"
+        android:background="@drawable/bg_edit_text">
+        <TextView
+            style="@style/text_view_user_info_title"
+            android:text="First Name"/>
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_user_info"
+        android:background="@drawable/bg_edit_text">
+        <TextView
+            style="@style/text_view_user_info_title"
+            android:text="Email"/>
+        <TextView
+            android:id="@+id/text_view_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="Name" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_user_info"
+        android:background="@drawable/bg_edit_text">
+        <TextView
+            style="@style/text_view_user_info_title"
+            android:text="Phone Number"/>
+        <TextView
+            android:id="@+id/text_view_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:hint="Name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/image_view_fruit" />
+    </RelativeLayout>
+
+</LinearLayout>
